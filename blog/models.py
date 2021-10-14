@@ -2,12 +2,12 @@ from django.db import models
 
 # Create your models here.
 from django.contrib.auth.models import User
-from django.db.models.fields.files import ImageField
 
+from froala_editor.fields import FroalaField
 from .helpers import *
 class BlogModel(models.Model):
     title=models.CharField(max_length=1000)
-    content=models.TextField()
+    content = FroalaField()
     slug=models.SlugField(max_length=1000,null=True,blank=True)
     image=models.ImageField(upload_to='blog')
     created_at=models.DateTimeField(auto_now_add=True)

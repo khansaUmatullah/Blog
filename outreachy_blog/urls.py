@@ -7,7 +7,7 @@ urlpatterns = [
     path('',include('blog.urls')),
     path('admin/', admin.site.urls),
     
-
+    path('froala_editor/',include('froala_editor.urls')),
 
 ]
 
