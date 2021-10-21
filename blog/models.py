@@ -19,3 +19,7 @@ class BlogModel(models.Model):
         super(BlogModel,self).save(*args,**kwargs)
 
 
+class subscribe(models.Model):
+    
+    email=models.EmailField()
+    

@@ -15,4 +15,12 @@ def blog_detail(request , slug):
     return render(request , 'blog_detail.html' , context)
 
 
-    
+def index(request):
+    if request.method=='POST':
+        
+        
+        subscribe.email=request.POST["email"]
+        
+        Contact=subscribe.objects.create(email=subscribe)
+        
+    return render(request,'home.html')
