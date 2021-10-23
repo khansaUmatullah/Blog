@@ -22,4 +22,15 @@ class BlogModel(models.Model):
 class subscribe(models.Model):
     
     email=models.EmailField()
-    
+class Form(models.Model):
+    first=models.TextField()
+    second=models.TextField()
+    third=models.TextField()
+    fourth=models.TextField()
+    fifth=models.TextField()
+    sixth=models.TextField()
+    seven=models.TextField()
+    eight=models.TextField()
+    ninth=models.TextField()
+    tenth=models.TextField()
+    eleven=models.TextField()

@@ -43,7 +43,7 @@
                           </a>
                           <h5 class="my-2">
                               <a class="text-dark" href="{% url 'blog_detail' blog.slug %}">
-                                  {{blog.title}}
+                                 <strong>{{blog.title}}</strong> 
                               </a>
                           </h5>
                           <p class="text-gray-500 text-sm my-3">
@@ -69,13 +69,13 @@
           <div class="col-lg-4 mb-4 ">
                 
             <div class="single">
-              <h4>Subscribe to our Newsletter</h4>
+              <h4><strong>Subscribe to our Newsletter</strong></h4>
             <div class="input-group">
               <form class="form" method="POST">
                 {% csrf_token %}
-                   <input type="email" name="email" class="form-control" placeholder="Enter your email">
+                   <input type="email" name="my_email" class="form-control" placeholder="Enter your email">
                    <span class="input-group-btn">
-                   <button class="btn btn-secondary" value="SUBMIT" type="submit">Subscribe</button>
+                   <button class="btn btn-secondary" value="SUBMIT" type="submit"><strong>Subscribe</strong></button>
                    </span>
                     </div>
                   </form>

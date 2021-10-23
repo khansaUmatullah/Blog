@@ -1,0 +1,97 @@
+
+{% extends "base.html" %}
+
+{% block start %}
+<div class="container">
+    <p style="padding-top: 5px;">Our project is based on the use of a mix model combining AI systems and software tools with human clinical data acquire through a Data collection system. The objective of this form is to collect typhoid fever clinical data (symptoma variables that will allow us not only to confirm the diagnosis but above all to determine the level of severity of the disease).</p>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box-element" id="form-wrapper">
+            <form class="form" method="POST"> 
+                {% csrf_token %}
+                <div id="user-info">
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="Have you been ever diagnosed by Typhoid?" name="1st">
+                        <br>
+                    </div>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="please tell us your gender" name="2nd">
+
+                    </div>
+                </div>
+                <div id="shipping info">
+                    <hr>
+                    
+                    <hr>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="What were your symptoms?" name="3rd">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="Which country you live in when you got diagnosed with the disease? " name="4th">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="Age" name="5th">
+                    </div>
+                    <br>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" placeholder="In which year did you got diagnosed with Typhoid?" name="6th">
+                    </div>
+                    
+
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="box-element" id="form-wrapper">
+                
+                    <div id="user-info">
+                        <div class="form-field">
+                            <input required class="form-control" type="text" placeholder="what were your early symptoms?" name="7th">
+                            <br>
+                        </div>
+                        <div class="form-field">
+                            <input required class="form-control" type="text" placeholder="Did you take any vaccine? " name="8th">
+    
+                        </div>
+                    </div>
+                    <div id="shipping info">
+                        <hr>
+                        
+                        <hr>
+                        <div class="form-field">
+                            <input required class="form-control" type="text" placeholder="Which vaccine did you took?" name="9th">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <input required class="form-control" type="text" placeholder="It lasts how many days?" name="10th">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <input required class="form-control" type="text" placeholder="After getting infected what precautions did you take?" name="11th">
+                        </div>
+                        <br>
+                        
+                            
+                       
+                        
+    
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        
+                <input id="form-button" class="btn btn-success btn-block" type="submit" value="Continue">
+
+            </form>
+        
+        <br>
+       
+    
+    
+
+</div>
+</div>
+{% endblock %}
